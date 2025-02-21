@@ -11,7 +11,7 @@ export default function BFHLApp() {
   const handleSubmit = async () => {
     try {
       const parsedData = JSON.parse(jsonInput);
-      const response = await fetch("http://localhost:5000/bfhl", {
+      const response = await fetch("https://bfhl-backend-4.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(parsedData),
